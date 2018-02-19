@@ -10,5 +10,12 @@ package practica1_grupo2;
  * @author ROBIN SALVATIERRA
  */
 public class Calculadora {
-    
+
+    public int factorial(int numero) {
+        if (numero == 0) {
+            return 1;
+        } else {
+            return (int) (numero * factorial(numero - 1));
+        }
+    }   
 }
